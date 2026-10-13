@@ -15,3 +15,10 @@ def test_unknown():
 
 def test_empty():
     assert reply("   ") == "Please type a question."
+
+
+def test_help():
+    response = reply("help")
+    assert "where an office is" in response
+    assert "when it opens" in response
+    assert "Training Office" in response
