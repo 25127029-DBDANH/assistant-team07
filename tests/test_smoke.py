@@ -22,3 +22,11 @@ def test_help():
     assert "where an office is" in response
     assert "when it opens" in response
     assert "Training Office" in response
+    
+def test_office_lookup_partial_training():
+    response = reply("training")
+    assert "Training Office" in response
+
+def test_office_lookup_partial_another_word():
+    response = reply("student")
+    assert "I don't know that yet" not in response
