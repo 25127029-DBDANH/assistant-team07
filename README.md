@@ -23,6 +23,11 @@ Or run interactively:
     python -m assistant
     # Study assistant (starter). Type 'quit' to exit.
 
+Ask `help` to see what the assistant can do:
+
+    python -m assistant help
+    # I can tell you where an office is and when it opens. Ask about an office, e.g. 'Where is the Training Office?'.
+
 ## Test
 
     pytest -q
